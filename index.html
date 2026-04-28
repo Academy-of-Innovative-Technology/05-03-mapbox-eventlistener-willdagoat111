@@ -2,12 +2,12 @@
 <html>
 
 <head>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Mapbox Event Listener</title>
   <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
   <link href="https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.css" rel="stylesheet">
-  <script src="https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.js"></script>
   <link href="src/css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -15,7 +15,9 @@
 
   <div id="map"></div>
   <input type="text" id="info" placeholder="Clicks: 0" disabled></div>
-  
+  <input id="clickCount" type="text" value="0" readonly />
+
+   <script src="https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.js"></script>
   <script src="env.js"></script>
   <script src="src/js/script.js"></script>
 </body>
